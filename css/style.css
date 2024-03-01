@@ -1,0 +1,233 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    border: 1px solid green;
+    /* font-size: 20px; */
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+h3 {
+    color: rgb(0, 8, 255);
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+h2 {
+    margin-bottom: 3vh;
+    font-size: xx-large;
+    color: brown;
+}
+
+a:hover {
+    color: red;
+    background: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    max-width: 100vw;
+    height: 10vh;
+    background-color: blue;
+    justify-content: space-around;
+}
+
+.resume-name {
+    font-size: 30px;
+}
+
+.navigation-bar>ul>li {
+    list-style-type: none;
+    padding: 0 3vw;
+    display: inline-block;
+}
+
+.navigation-bar>ul>li>a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navigation-bar>ul>li,
+.resume-name {
+    line-height: 10vh;
+}
+
+nav[class="navigation-bar"]>ul>li>a:hover {
+    color: rgb(255, 0, 102);
+    background-color: rgb(232, 243, 131);
+}
+
+.navigation-bar {
+    display: none;
+}
+
+/* Main */
+main {
+    margin-top: 1.5vh;
+    max-width: 100vw;
+}
+
+/* Main Left/Top */
+.left {
+    background-color: rgb(69, 240, 91);
+}
+
+.my-profile {
+    padding-top: 2vh;
+    text-align: center;
+}
+
+.my-profile>img {
+    width: 50%;
+    border-radius: 50%;
+    border: 7px rgb(72, 72, 72) solid;
+}
+
+.my-profile>figcaption {
+    padding: 1vh;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-top: 1vh;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    border-top: 1px solid rgb(255, 0, 251);
+    border-bottom: 1px solid rgb(255, 0, 204);
+}
+
+.contact {
+    font-size: 130%;
+    margin-top: 5vh;
+    margin-left: 1vw;
+}
+
+.contact>ul {
+    list-style-type: none;
+    margin-left: 10vw;
+}
+
+/* .contact>ul>li>p {
+    margin-top: -5%;
+} */
+
+.my-facebook {
+    text-decoration: none;
+    color: chocolate;
+    overflow-wrap: break-word;
+}
+
+.my-facebook:hover {
+    background-color: rgb(250, 245, 0);
+    color: rgb(55, 0, 128);
+    font-weight: bolder;
+}
+
+/* Right/Bottom Main */
+.right {
+    padding: 5vh 0;
+    background-color: rgb(113, 236, 240);
+    margin-top: 10px;
+}
+
+#info>p {
+    font-size: 20px;
+}
+
+#info,
+#education,
+#experience,
+#hobby {
+    margin-top: 5vh;
+    margin-left: 1vw;
+}
+
+.education-list>li,
+.experience-list>li {
+    list-style-type: none;
+    margin-bottom: 5vh;
+    display: flex;
+}
+
+.education-list>li>img,
+.experience-list>li>img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.experience-list>li>img[alt="CDM Logo"] {
+    width: 10vw;
+}
+
+.education-list>li>p,
+.experience-list>li>p {
+    line-height: 8vh;
+    margin-left: 3vw;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.experience-list>li>p>a {
+    text-decoration: none;
+}
+
+.hobby-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.hobby-item>img {
+    width: 30%;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 5vh;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5vh 0;
+    background-color: gray;
+    font-style: italic;
+}
+
+/* For PC */
+@media all and (min-width:850px) {
+    .navigation-bar {
+        display: block;
+    }
+
+    main {
+        background-color: rgb(69, 240, 91);
+    }
+
+    .left {
+        width: 30%;
+        float: left;
+
+        .contact>ul {
+            margin-left: 1vw;
+        }
+    }
+
+    .right {
+        margin-top: 0;
+        width: 70%;
+    }
+
+    .left,
+    .right {
+        display: inline-block;
+    }
+}
